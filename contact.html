@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Hamid Bouhda - Cabinet d'Avocats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">
+            <span class="logo-h">H</span>
+            <span class="logo-b">B</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <div class="logo" data-aos="fade-right" data-aos-delay="200">
+                <h1>HAMID BOUHDA LAW</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="cabinet.html" class="nav-link">Le Cabinet</a></li>
+                    <li><a href="expertises.html" class="nav-link">Nos Expertises</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta" data-aos="fade-left" data-aos-delay="400">
+                <a href="#contact-form" class="btn-gold">Consultation Gratuite</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-delay="600">Contactez-nous</h1>
+            <p data-aos="fade-up" data-aos-delay="800">Nous sommes là pour vous accompagner dans tous vos besoins juridiques</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact-form">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Nom complet *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <span class="error-message" id="fullNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Numéro de téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="droit-commercial">Droit Commercial</option>
+                                <option value="droit-famille">Droit de la Famille</option>
+                                <option value="droit-penal">Droit Pénal</option>
+                                <option value="droit-immobilier">Droit Immobilier</option>
+                                <option value="arbitrage">Arbitrage</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-gold btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container" data-aos="fade-left" data-aos-delay="400">
+                    <h2>Informations de contact</h2>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>Red Riad EL GHIZLANE1, 3éme ETAGE N°8<br>
+                            Allée Des Tronens Ain Sebaa<br>
+                            Casablanca, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:0522356961">0522356961</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p><a href="mailto:contact@maitrebouhda.com">contact@maitrebouhda.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Heures d'ouverture</h3>
+                            <p>Lundi - Vendredi: 9h00 - 18h00<br>
+                            Samedi: 9h00 - 13h00<br>
+                            Dimanche: Fermé</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" data-aos="fade-up">
+        <div class="container">
+            <h2>Notre localisation</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8234567890123!2d-7.5234567!3d33.6123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRed%20Riad%20EL%20GHIZLANE1%2C%203%C3%A8me%20ETAGE%20N%C2%B07%2C%20All%C3%A9e%20Des%20Tronens%20Ain%20Sebaa%2C%20Casablanca%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1703123456789!5m2!1sfr!2sma"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Votre message a été envoyé avec succès!</h3>
+            <p>Nous vous contacterons dans les plus brefs délais</p>
+            <button class="btn-gold" onclick="closeSuccessMessage()">D'accord</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <div class="footer-logo">
+                        <h3>HAMID BOUHDA LAW</h3>
+                        <p>Cabinet d'avocats d'excellence offrant des solutions juridiques personnalisées pour particuliers et entreprises.</p>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cabinet.html">Le Cabinet</a></li>
+                        <li><a href="expertises.html">Nos Expertises</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="600">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Red Riad EL GHIZLANE1, 3éme ETAGE N°8, Allée Des Tronens Ain Sebaa, Casablanca</p>
+                        <p><i class="fas fa-phone"></i> 0522356961</p>
+                        <p><i class="fas fa-envelope"></i> contact@maitrebouhda.com</p>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="800">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hamid Bouhda Law. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+    <script src="header.js"></script>
+</body>
+</html>
